@@ -27,19 +27,48 @@ O objetivo deste desafio é avaliar:
 
 ### Etapa 1: Definição de Testes e Critérios de Qualidade
 
-1. **Descrição da Tarefa**:
-   - Crie uma documentação que contenha os cenários de teste principais para o fluxo de agendamento de consultas.
-   - Detalhe como você priorizaria os testes e quais seriam os principais critérios de qualidade.
-   - Justifique quais tipos de teste (unitário, integração, end-to-end) você usaria em cada cenário.
+**Descrição da Tarefa**:
+- Crie uma documentação que contenha os cenários de teste principais para o fluxo de agendamento de consultas.
+- Use uma **matriz de risco (probabilidade vs. impacto)** para priorizar os cenários de teste. Considere a probabilidade de um defeito ocorrer em cada cenário e o impacto que ele teria no sistema.
+  - **Probabilidade**: Qual a chance de esse problema ocorrer no uso do sistema?
+  - **Impacto**: Qual o impacto no sistema ou na experiência do usuário caso o problema ocorra?
 
-2. **Entrega**:
-   - Armazene a documentação no diretório `/documentation`.
-   - Use um formato de arquivo de sua escolha (Markdown ou PDF).
+**Contexto do Sistema**:
+Imagine um sistema de agendamento de consultas para clínicas e profissionais de saúde com os seguintes requisitos básicos:
+  - Usuários podem agendar consultas em horários disponíveis.
+  - Consultas podem ser canceladas.
+  - Somente horários válidos e disponíveis devem ser apresentados para o agendamento.
+  - O sistema deve lidar com tentativas de agendamento em horários já ocupados de forma apropriada.
+  
+**Exemplos de Cenários para Avaliação**:
+  - Agendamento de uma nova consulta para um horário disponível.
+  - Cancelamento de uma consulta existente.
+  - Exibição correta de horários disponíveis.
+  - Tentativa de agendamento em um horário já ocupado.
+  - Restrição de cancelamento de consulta criada recentemente.
 
-3. **Critérios de Avaliação**:
-   - Cobertura dos cenários de teste.
-   - Clareza e organização da documentação.
-   - Justificativa para os tipos de teste sugeridos.
+**Matriz de Risco (Exemplo)**:
+Abaixo está um exemplo de matriz de risco para guiar sua análise de priorização. Use uma estrutura semelhante para avaliar os casos de teste propostos.
+
+| ID   | Caso de Teste                            | Probabilidade (1-5) | Impacto (1-5) | Nível de Risco (P x I) | Prioridade |
+|------|------------------------------------------|----------------------|---------------|-------------------------|------------|
+| TC01 | Agendar uma nova consulta                | 3                    | 5             | 15                      | Alta       |
+| TC02 | Cancelar uma consulta recém-criada       | 2                    | 4             | 8                       | Média      |
+| TC03 | Verificar horários disponíveis           | 4                    | 3             | 12                      | Alta       |
+| TC04 | Tentar agendar em horário ocupado        | 5                    | 2             | 10                      | Média      |
+| TC05 | Restrição de cancelamento recente        | 2                    | 3             | 6                       | Baixa      |
+
+> **Notas**: Na matriz acima, uma pontuação mais alta indica uma prioridade maior para o teste. **Probabilidade** varia de 1 (baixa chance de ocorrer) a 5 (alta chance), e **Impacto** varia de 1 (impacto baixo) a 5 (impacto alto).
+
+**Entrega**:
+- Crie a documentação no diretório `/documentation`, incluindo a matriz de risco e a justificativa para a priorização.
+- Use um formato de arquivo de sua escolha (Markdown ou PDF).
+
+**Critérios de Avaliação**:
+1. Cobertura dos cenários de teste.
+2. Clareza e organização da documentação.
+3. Justificativa para os tipos de teste sugeridos.
+4. Uso eficaz da matriz de risco para priorização.
 
 ---
 
