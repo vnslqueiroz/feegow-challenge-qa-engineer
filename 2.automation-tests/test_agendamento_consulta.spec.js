@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Agendamento de Consulta', () => {
   test('Deve agendar uma nova consulta com sucesso', async ({ page }) => {
-    await page.goto('https://example.com/agendamento');
+    await page.goto('https://minhaclinica.com/agendamento');
 
     // Selecionar um horário disponível
     await page.selectOption('#horario', '10:00');
@@ -15,7 +15,7 @@ test.describe('Agendamento de Consulta', () => {
   });
 
   test('Deve cancelar a consulta agendada', async ({ page }) => {
-    await page.goto('https://example.com/agendamento');
+    await page.goto('https://minhaclinica.com/agendamento');
 
     // Cancelar a consulta
     await page.click('#cancelar'); // Botão para cancelar a consulta

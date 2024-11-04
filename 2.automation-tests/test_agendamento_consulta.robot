@@ -2,7 +2,7 @@
 Library           SeleniumLibrary
 
 *** Variables ***
-${URL}            https://example.com/agendamento
+${URL}            https://minhaclinica.com/agendamento
 ${HORARIO}        10:00
 
 *** Test Cases ***
