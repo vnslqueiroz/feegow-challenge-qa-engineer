@@ -61,7 +61,7 @@ Abaixo está um exemplo de matriz de risco para guiar sua análise de priorizaç
 > **Notas**: Na matriz acima, uma pontuação mais alta indica uma prioridade maior para o teste. **Probabilidade** varia de 1 (baixa chance de ocorrer) a 5 (alta chance), e **Impacto** varia de 1 (impacto baixo) a 5 (impacto alto).
 
 **Entrega**:
-- Crie a documentação no diretório `/documentation`, incluindo a matriz de risco e a justificativa para a priorização.
+- Crie a documentação no diretório `/1.documentation`, incluindo a matriz de risco e a justificativa para a priorização.
 - Use um formato de arquivo de sua escolha (Markdown ou PDF).
 
 **Critérios de Avaliação**:
@@ -94,8 +94,8 @@ Para este exercício, vamos supor que:
 - Um botão de "Agendar" e um botão de "Cancelar" estão disponíveis para realizar as operações.
 
 **Entrega**:
-- Adicione o código dos testes no diretório `/automation-tests`.
-- Inclua um arquivo `README.md` dentro da pasta `/automation-tests` com instruções para rodar os testes (ex.: instalação de dependências e comandos para execução).
+- Adicione o código dos testes no diretório `/2.automation-tests`.
+- Inclua um arquivo `README.md` dentro da pasta `/2.automation-tests` com instruções para rodar os testes (ex.: instalação de dependências e comandos para execução).
 
 **Critérios de Avaliação**:
 1. Cobertura do fluxo solicitado.
@@ -107,33 +107,54 @@ Para este exercício, vamos supor que:
 
 ### Etapa 3: Simulação de um Problema Técnico
 
-1. **Descrição da Tarefa**:
-   - Documente um bug fictício em que o sistema não permite o cancelamento de uma consulta criada nos últimos 5 minutos.
-   - Inclua a descrição do problema, passos de reprodução, ambiente de teste e critérios de aceitação para corrigir o problema.
+### Etapa 3: Simulação de um Problema Técnico
 
-2. **Entrega**:
-   - Crie o documento no diretório `/bug-report` em formato Markdown ou PDF.
+**Descrição da Tarefa**:
+- Documente um bug fictício que ocorre no sistema de agendamento de consultas. Neste caso específico, o problema é o seguinte:
+  - O sistema não permite o cancelamento de uma consulta se ela foi criada nos últimos 5 minutos.
+- Sua tarefa é descrever o bug, detalhando o impacto na experiência do usuário, os passos para reprodução, e os critérios de aceitação para a correção.
 
-3. **Critérios de Avaliação**:
-   - Clareza e detalhamento do relatório de bug.
-   - Precisão nos passos para reprodução.
-   - Definição de critérios de aceitação.
+**Contexto do Problema**:
+Imagine que usuários do sistema estão enfrentando dificuldades ao tentar cancelar consultas recém-criadas. Esse problema impede que o cancelamento ocorra quando o usuário tenta fazê-lo imediatamente após o agendamento, o que pode causar frustração e gerar confusão sobre a funcionalidade de cancelamento.
+
+Para completar esta tarefa, forneça uma análise detalhada, incluindo o contexto do impacto no usuário final e as etapas específicas para reproduzir o bug. Além disso, defina claramente os critérios de aceitação, ajudando a equipe de desenvolvimento a compreender as condições esperadas para a correção.
+
+**Modelo de Bug Report**:
+Um modelo de bug report está disponível no diretório `/3.bug-report` (`bug_report_template.md`). Utilize esse modelo para estruturar sua documentação de forma clara e completa.
+
+**Entrega**:
+- Crie o relatório de bug no diretório `/3.bug-report`, preenchendo o modelo fornecido.
+- Salve o documento em formato Markdown ou PDF.
+
+**Critérios de Avaliação**:
+1. Clareza e detalhamento do relatório de bug.
+2. Precisão nos passos para reprodução do problema.
+3. Definição clara dos critérios de aceitação.
+4. Capacidade de comunicação e descrição do impacto no usuário.
+
 
 ---
 
 ### Etapa 4: Interação com Times DevOps e Produto
 
-1. **Descrição da Tarefa**:
-   - Explique como você integraria o QA na pipeline de CI/CD e como definiria os critérios de qualidade e aceitação com o time de Produto e DevOps.
-   - Descreva o processo e as ferramentas que você usaria para garantir qualidade no CI/CD.
+**Descrição da Tarefa**:
+- Para esta etapa, queremos entender como você integraria o processo de QA em uma pipeline de CI/CD e como colaboraria com os times de Produto e DevOps para garantir critérios de aceitação e definição de pronto ("definition of done") claros.
+- Explique como você configuraria testes automatizados em cada etapa da pipeline de CI/CD e como garantiria que os critérios de qualidade fossem cumpridos em cada versão do sistema.
 
-2. **Entrega**:
-   - Documente sua resposta no diretório `/documentation` em um arquivo Markdown ou PDF.
+**Contexto da Tarefa**:
+Imagine que você faz parte de um time DevOps onde o QA deve estar completamente integrado ao ciclo de desenvolvimento e deployment. O objetivo é construir uma pipeline que ofereça feedback contínuo sobre a qualidade do sistema, com testes automatizados e práticas colaborativas que garantam a estabilidade e confiabilidade das versões.
 
-3. **Critérios de Avaliação**:
-   - Compreensão do processo de CI/CD.
-   - Capacidade de definir critérios de aceitação e qualidade.
-   - Comunicação clara e habilidades de trabalho em equipe.
+Para auxiliar na estruturação de sua resposta, preparamos um questionário com as principais questões sobre o tema. Você pode encontrar o questionário no diretório `/4.assessment` em formato Markdown (`assessment_questions.md`). Siga as questões do questionário para fornecer uma visão completa sobre como você implementaria e sustentaria o processo de QA em um ambiente DevOps.
+
+**Entrega**:
+- Responda ao questionário no diretório `/4.assessment`, preenchendo o arquivo `assessment_questions.md` com suas respostas.
+- Salve o documento em formato Markdown.
+
+**Critérios de Avaliação**:
+1. Clareza e completude das respostas no questionário.
+2. Compreensão do processo de integração de QA em CI/CD.
+3. Habilidade para definir critérios de aceitação e de pronto ("definition of done") com o time.
+4. Práticas de colaboração e alinhamento entre os times de Produto, DevOps e QA.
 
 ---
 
