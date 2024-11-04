@@ -74,19 +74,34 @@ Abaixo está um exemplo de matriz de risco para guiar sua análise de priorizaç
 
 ### Etapa 2: Implementação de Testes Automatizados
 
-1. **Descrição da Tarefa**:
-   - Implemente uma automação de teste end-to-end para a funcionalidade de agendamento e cancelamento de consultas.
-   - Você pode usar um framework de sua escolha, como [Playwright](https://playwright.dev/) ou [Robot Framework](https://robotframework.org/).
-   - Inclua verificações que assegurem o sucesso do agendamento e o cancelamento da consulta.
+**Descrição da Tarefa**:
+- Implemente uma automação de teste end-to-end para a funcionalidade de agendamento e cancelamento de consultas em um sistema fictício de clínicas e profissionais de saúde.
+- A funcionalidade a ser testada inclui:
+  - Agendar uma nova consulta em um horário disponível.
+  - Cancelar a consulta recém-agendada e confirmar o cancelamento.
+- Você pode escolher qualquer framework de automação end-to-end, como [Playwright](https://playwright.dev/) ou [Robot Framework](https://robotframework.org/).
 
-2. **Entrega**:
-   - Adicione o código dos testes no diretório `/automation-tests`.
-   - Inclua um arquivo `README.md` dentro da pasta `/automation-tests` com instruções para rodar os testes (ex.: instalação de dependências e comandos para execução).
+**Contexto do Sistema**:
+Imagine que estamos testando a página de agendamento de consultas de uma clínica. O sistema permite que o usuário:
+- Selecione um horário disponível para uma consulta.
+- Confirme o agendamento.
+- Visualize a consulta agendada em uma lista.
+- Cancele uma consulta existente.
 
-3. **Critérios de Avaliação**:
-   - Cobertura do fluxo solicitado.
-   - Qualidade e organização do código.
-   - Configuração de execução dos testes no CI/CD (opcional, mas diferencial).
+Para este exercício, vamos supor que:
+- A URL para o agendamento é `https://minhaclinica.com/agendamento`.
+- O horário de consulta pode ser selecionado em uma lista suspensa.
+- Um botão de "Agendar" e um botão de "Cancelar" estão disponíveis para realizar as operações.
+
+**Entrega**:
+- Adicione o código dos testes no diretório `/automation-tests`.
+- Inclua um arquivo `README.md` dentro da pasta `/automation-tests` com instruções para rodar os testes (ex.: instalação de dependências e comandos para execução).
+
+**Critérios de Avaliação**:
+1. Cobertura do fluxo solicitado.
+2. Qualidade e organização do código.
+3. Configuração de execução dos testes no CI/CD (opcional, mas diferencial).
+
 
 ---
 
