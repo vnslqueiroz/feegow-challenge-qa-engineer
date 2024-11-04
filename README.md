@@ -17,9 +17,9 @@ O objetivo deste desafio é avaliar:
 ## Requisitos Técnicos
 
 - **Linguagens**: PHP, Python, JavaScript ou TypeScript.
-- **Frameworks de Automação**: Playwright, Cypress ou Robot Framework.
+- **Frameworks de Automação**: Playwright ou Robot Framework.
 - **Controle de Versão**: Git.
-- **Pipeline CI/CD**: Familiaridade com GitHub Actions, GitLab CI/CD ou Jenkins é um diferencial.
+- **Pipeline CI/CD**: Familiaridade com GitHub Action ou Jenkins é um diferencial.
 
 ---
 
@@ -76,7 +76,7 @@ Abaixo está um exemplo de matriz de risco para guiar sua análise de priorizaç
 
 1. **Descrição da Tarefa**:
    - Implemente uma automação de teste end-to-end para a funcionalidade de agendamento e cancelamento de consultas.
-   - Você pode usar um framework de sua escolha, como Playwright, Cypress ou Robot Framework.
+   - Você pode usar um framework de sua escolha, como Playwright ou Robot Framework.
    - Inclua verificações que assegurem o sucesso do agendamento e o cancelamento da consulta.
 
 2. **Entrega**:
@@ -137,7 +137,7 @@ Abaixo está um exemplo de matriz de risco para guiar sua análise de priorizaç
 
 ## Pontos Extras
 
-- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions ou GitLab CI/CD).
+- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions).
 - Qualquer sugestão de melhoria para o fluxo ou automação de QA.
 
 Boa sorte! Estamos ansiosos para ver sua abordagem!
