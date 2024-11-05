@@ -107,8 +107,6 @@ Para este exercício, vamos supor que:
 
 ### Etapa 3: Simulação de um Problema Técnico
 
-### Etapa 3: Simulação de um Problema Técnico
-
 **Descrição da Tarefa**:
 - Documente um bug fictício que ocorre no sistema de agendamento de consultas. Neste caso específico, o problema é o seguinte:
   - O sistema não permite o cancelamento de uma consulta se ela foi criada nos últimos 5 minutos.
@@ -157,6 +155,40 @@ Para auxiliar na estruturação de sua resposta, preparamos um questionário com
 4. Práticas de colaboração e alinhamento entre os times de Produto, DevOps e QA.
 
 ---
+
+## Orientações para uso da API de teste.
+
+#### Pré requisitos
+Clone deste desafio e acessar pasta api
+```
+git clone git@github.com:feegow/feegow-challenge-qa-engineer.git
+cd feegow-challenge-qa-engineer.git/api
+```
+Instalação do make
+```
+sudo apt update
+sudo apt install make
+```
+
+Execução
+
+```
+make up
+make install
+make mig
+```
+
+#### Comandos disponíveis para o make
+- make up           - Levanta o ambiente de desenvolvimento"
+- make install      - Instalar dependências"
+- make mig          - Executa as migrations, recria o banco e executa seeders"
+- make appointment   - Insere um novo agendamento"
+- make down         - Para o ambiente de desenvolvimento"
+
+Exemplo de inserção de novo agendamento
+```
+ make appointment doctor_id=1 patient_id=1 date="2024-11-06 10:00:00" status="pending"
+ ````
 
 ## Orientações Gerais
 
