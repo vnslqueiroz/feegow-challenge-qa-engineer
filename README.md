@@ -107,8 +107,6 @@ Para este exercício, vamos supor que:
 
 ### Etapa 3: Simulação de um Problema Técnico
 
-### Etapa 3: Simulação de um Problema Técnico
-
 **Descrição da Tarefa**:
 - Documente um bug fictício que ocorre no sistema de agendamento de consultas. Neste caso específico, o problema é o seguinte:
   - O sistema não permite o cancelamento de uma consulta se ela foi criada nos últimos 5 minutos.
