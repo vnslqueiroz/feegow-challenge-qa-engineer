@@ -5,7 +5,7 @@
 
 #### Pré requisitos
 
-Clone deste desafio e acessar pasta api
+Clone deste desafio e acesse a pasta api
 
 ```shell
 git clone git@github.com:feegow/feegow-challenge-qa-engineer.git
