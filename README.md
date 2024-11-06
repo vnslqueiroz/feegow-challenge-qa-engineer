@@ -148,7 +148,7 @@ Um modelo de bug report está disponível no diretório `/3.bug-report` (`bug_re
 
 ## Pontos Extras
 
-- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions, Jenkins).
+- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions).
 - Qualquer sugestão de melhoria para o fluxo ou automação de QA.
 
 Boa sorte! Estamos ansiosos para ver sua abordagem!
