@@ -158,7 +158,7 @@ Para auxiliar na estruturação de sua resposta, preparamos um questionário com
 
 ## Orientações para uso da API de teste.
 
-As orientações para API de teste encontran-se [neste documento](./api/README.md)
+As orientações para API de teste encontram-se [neste documento](./api/README.md)
 
 ## Orientações Gerais
 
