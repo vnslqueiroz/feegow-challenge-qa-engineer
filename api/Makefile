@@ -17,10 +17,6 @@ check-vendor:
 		echo "Pasta vendor não encontrada. Instalando dependências..."; \
 		docker run --rm -v $(PWD):/app composer install; \
 	fi
-	@if [ ! -f "database/database.sqlite" ]; then \
-		echo "Arquivo database.sqlite não encontrado. Criando..."; \
-		touch database/database.sqlite; \
-	fi
 
 mig: check-vendor ## Executa as migrations
 	$(ARTISAN) migrate:fresh --seed
@@ -32,6 +28,15 @@ appointment: ## Insere um novo agendamento
 	-d '{"doctor_id": "$(doctor_id)", "patient_id": "$(patient_id)", "appointment_date": "$(date)", "status": "$(status)"}'
 
 up: check-vendor ## Levanta o ambiente
+	@echo "Verificando .env e database.sqlite..."
+	@if [ ! -f ".env" ]; then \
+		echo "Arquivo .env não encontrado. Copiando .env.example para .env..."; \
+		cp .env.example .env; \
+	fi
+	@if [ ! -f "database/database.sqlite" ]; then \
+		echo "Arquivo database.sqlite não encontrado. Criando..."; \
+		touch database/database.sqlite; \
+	fi
 	@echo "Levantando o ambiente de desenvolvimento..."
 	@if [ -f "./vendor/bin/sail" ]; then \
 		./vendor/bin/sail up -d; \
