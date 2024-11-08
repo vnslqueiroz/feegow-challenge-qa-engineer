@@ -1,5 +1,6 @@
 # Variáveis
-ARTISAN = docker exec -it api-laravel.test-1 php artisan
+CONTAINER_NAME = $(shell docker ps --filter "name=laravel.test" --format "{{.Names}}")
+ARTISAN = docker exec -it $(CONTAINER_NAME) php artisan
 
 # Comandos
 .PHONY: help mig appointment up down install check-vendor
@@ -54,4 +55,4 @@ down: ## Para o ambiente
 
 install: check-vendor ## Instala as dependências do Composer
 	@echo "Instalando dependências do Composer..."
-	docker exec -it api-laravel.test-1 composer install
+	docker exec -it $(CONTAINER_NAME) composer install
