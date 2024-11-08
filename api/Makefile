@@ -17,6 +17,10 @@ check-vendor:
 		echo "Pasta vendor não encontrada. Instalando dependências..."; \
 		docker run --rm -v $(PWD):/app composer install; \
 	fi
+	@if [ ! -f "database/database.sqlite" ]; then \
+		echo "Arquivo database.sqlite não encontrado. Criando..."; \
+		touch database/database.sqlite; \
+	fi
 
 mig: check-vendor ## Executa as migrations
 	$(ARTISAN) migrate:fresh --seed
