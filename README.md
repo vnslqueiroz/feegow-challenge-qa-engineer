@@ -133,6 +133,36 @@ Um modelo de bug report está disponível no diretório `/3.bug-report` (`bug_re
 
 ---
 
+
+### Etapa 4: Interação com Times DevOps e Produto
+
+**Descrição da Tarefa**:
+- Para esta etapa, queremos entender como você integraria o processo de QA em uma pipeline de CI/CD e como colaboraria com os times de Produto e DevOps para garantir critérios de aceitação e definição de pronto ("definition of done") claros.
+- Explique como você configuraria testes automatizados em cada etapa da pipeline de CI/CD e como garantiria que os critérios de qualidade fossem cumpridos em cada versão do sistema.
+
+**Contexto da Tarefa**:
+Imagine que você faz parte de um time DevOps onde o QA deve estar completamente integrado ao ciclo de desenvolvimento e deployment. O objetivo é construir uma pipeline que ofereça feedback contínuo sobre a qualidade do sistema, com testes automatizados e práticas colaborativas que garantam a estabilidade e confiabilidade das versões.
+
+Para auxiliar na estruturação de sua resposta, preparamos um questionário com as principais questões sobre o tema. Você pode encontrar o questionário no diretório `/4.assessment` em formato Markdown (`assessment_questions.md`). Siga as questões do questionário para fornecer uma visão completa sobre como você implementaria e sustentaria o processo de QA em um ambiente DevOps.
+
+**Entrega**:
+- Responda ao questionário no diretório `/4.assessment`, preenchendo o arquivo `assessment_questions.md` com suas respostas.
+- Salve o documento em formato Markdown.
+
+**Critérios de Avaliação**:
+1. Clareza e completude das respostas no questionário.
+2. Compreensão do processo de integração de QA em CI/CD.
+3. Habilidade para definir critérios de aceitação e de pronto ("definition of done") com o time.
+4. Práticas de colaboração e alinhamento entre os times de Produto, DevOps e QA.
+
+---
+
+## Orientações para uso da API de teste.
+
+As orientações para API de teste encontram-se [neste documento](./api/README.md)
+
+=======
+
 ## Orientações Gerais
 
 - **Prazo**: Este teste deve ser concluído em até 5 dias após o recebimento.
