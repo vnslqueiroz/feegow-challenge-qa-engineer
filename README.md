@@ -89,7 +89,7 @@ Imagine que estamos testando a página de agendamento de consultas de uma clíni
 - Cancele uma consulta existente.
 
 Para este exercício, vamos supor que:
-- A URL para o agendamento é `https://minhaclinica.com/agendamento`.
+- A URL para o agendamento é `https://clinicaluz.com/agendamento`.
 - O horário de consulta pode ser selecionado em uma lista suspensa.
 - Um botão de "Agendar" e um botão de "Cancelar" estão disponíveis para realizar as operações.
 
