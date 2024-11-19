@@ -108,7 +108,7 @@ Para este exercício, vamos supor que:
 ### Etapa 3: Simulação de um Problema Técnico
 
 **Descrição da Tarefa**:
-- Documente um bug fictício que ocorre no sistema de agendamento de consultas. Neste caso específico, o problema é o seguinte:
+- Documente um bug que ocorre no sistema de agendamento de consultas. Neste caso específico, o problema é o seguinte:
   - O sistema não permite o cancelamento de uma consulta se ela foi criada nos últimos 5 minutos.
 - Sua tarefa é descrever o bug, detalhando o impacto na experiência do usuário, os passos para reprodução, e os critérios de aceitação para a correção.
 
@@ -132,6 +132,7 @@ Um modelo de bug report está disponível no diretório `/3.bug-report` (`bug_re
 
 
 ---
+
 
 ### Etapa 4: Interação com Times DevOps e Produto
 
@@ -160,6 +161,8 @@ Para auxiliar na estruturação de sua resposta, preparamos um questionário com
 
 As orientações para API de teste encontram-se [neste documento](./api/README.md)
 
+=======
+
 ## Orientações Gerais
 
 - **Prazo**: Este teste deve ser concluído em até 5 dias após o recebimento.
@@ -175,7 +178,7 @@ As orientações para API de teste encontram-se [neste documento](./api/README.m
 
 ## Pontos Extras
 
-- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions, Jenkins).
+- Configuração de execução de testes em pipeline CI/CD (ex.: GitHub Actions).
 - Qualquer sugestão de melhoria para o fluxo ou automação de QA.
 
 Boa sorte! Estamos ansiosos para ver sua abordagem!
