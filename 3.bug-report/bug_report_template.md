@@ -1,53 +1,72 @@
 # Bug Report
 
 ## Título do Bug
-[Descreva brevemente o problema, ex: "Erro ao cancelar consulta criada nos últimos 5 minutos"]
+Erro ao cancelar consulta criada nos últimos 5 minutos
 
 ---
 
 ## Descrição
-**Resumo**: [Descreva o bug em poucas palavras: qual é o problema e onde ocorre]
+**Resumo**: O sistema não permite o cancelamento de uma consulta criada nos últimos 5 minutos. O botão de cancelamento não realiza a ação esperada e não retorna nenhuma mensagem de erro ou informação ao usuário.
 
-**Impacto**: [Explique como o bug afeta o sistema ou a experiência do usuário]
+**Impacto**: Este bug causa frustração nos usuários, pois impede o cancelamento de consultas imediatamente após a criação. Isso pode gerar confusão sobre o funcionamento da funcionalidade e reduzir a confiança no sistema. Além disso, pode levar a falhas em operações sensíveis ao tempo, como correções rápidas de agendamentos errados.
 
 ---
 
-## Passos para Reproduzir
-1. [Passo 1: exemplo - Acesse a página de agendamento de consultas]
-2. [Passo 2: exemplo - Crie uma nova consulta para daqui a 5 minutos]
-3. [Passo 3: exemplo - Tente cancelar a consulta imediatamente após a criação]
-4. ...
+## Passos para Reproduzir o bug
+
+Passo 1 - Acesse a página de agendamento de consultas: https://clinicaluz.com/agendamento.
+
+Passo 2 - Selecione um horário disponível e clique no botão "Agendar".
+
+Passo 3 - Verifique que a consulta foi adicionada à lista de consultas agendadas.
+
+Passo 4 - Imediatamente após o agendamento, clique no botão "Cancelar" ao lado da consulta criada.
+
+Passo 5 - Observe que o sistema não cancela a consulta e não exibe mensagens de erro ou feedback ao usuário.
 
 ---
 
 ## Comportamento Esperado
-[Descreva o que deveria acontecer ao seguir os passos acima, ex: "O sistema deveria permitir o cancelamento de uma consulta imediatamente após a criação"]
+
+O sistema deveria permitir que o usuário cancelasse uma consulta imediatamente após a criação, sem restrição de tempo.
 
 ---
 
 ## Comportamento Atual
-[Explique o que está acontecendo atualmente, ex: "O sistema retorna uma mensagem de erro ao tentar cancelar a consulta recém-criada"]
 
+O sistema impede o cancelamento de consultas criadas nos últimos 5 minutos, sem qualquer mensagem de erro ou informação ao usuário sobre o bloqueio.
 ---
 
 ## Ambiente de Teste
-- **Dispositivo**: [ex: Desktop]
-- **Sistema Operacional**: [ex: Windows 10]
-- **Navegador**: [ex: Google Chrome 90.0]
-- **Ambiente**: [ex: Staging]
+
+Dispositivo: Desktop
+
+Sistema Operacional: Windows 11
+
+Navegador: Google Chrome 117.0.5938.132
+
+Ambiente: Staging
 
 ---
 
 ## Evidências
-[Inclua capturas de tela, gravações de tela ou logs relevantes, se possível]
+
+Observação: Pelo fato do sistema e o contexto serem fictícios não há maneiras de evidenciar o bug acontecendo.
 
 ---
 
 ## Critérios de Aceitação
-- [Critério 1: exemplo - Permitir que uma consulta seja cancelada imediatamente após a criação]
-- [Critério 2: exemplo - Garantir que a funcionalidade de cancelamento funcione em todos os dispositivos e navegadores suportados]
 
+- Permitir que consultas sejam canceladas imediatamente após a criação, sem restrições de tempo.
+
+- Exibir uma mensagem clara ao usuário em caso de falhas no cancelamento.
+
+- Garantir que a funcionalidade de cancelamento funcione corretamente em todos os dispositivos e navegadores suportados.
+  
 ---
 
 ## Observações Adicionais
-[Qualquer informação adicional que possa ajudar a equipe de desenvolvimento a entender e corrigir o bug]
+
+- Verificar se o problema está relacionado a validações no backend ou frontend.
+
+- Avaliar possíveis soluções temporárias, como permitir o cancelamento sem restrições de tempo até a resolução definitiva do bug.
